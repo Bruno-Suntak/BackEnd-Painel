@@ -6,6 +6,8 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+var cors = require('cors');
+app.use(cors());
 
 // Conectar ao MongoDB
 mongoose.connect('mongodb://mongodb:27017/backend');
